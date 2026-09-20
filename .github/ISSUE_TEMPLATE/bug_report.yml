@@ -1,0 +1,57 @@
+name: Bug Report
+description: Report a schema validation issue, DSP syntax parsing bug, or unexpected behavior.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report a bug! Please fill out as much detail as possible.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what happened...
+    validations:
+      required: true
+  - type: textarea
+    id: json_snippet
+    attributes:
+      label: Preset JSON Snippet
+      description: Provide the schema JSON snippet that reproduces the issue (if applicable).
+      render: json
+      placeholder: |
+        {
+          "version": "1.0.0",
+          ...
+        }
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear description of what you expected to happen.
+    validations:
+      required: true
+  - type: checkboxes
+    id: execution_context
+    attributes:
+      label: Execution Context
+      description: Select all environments where this issue occurs.
+      options:
+        - label: Standalone Application
+        - label: DAW / Audio Plugin Host
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: Operating System
+      description: Select all operating systems where this issue occurs.
+      options:
+        - label: Windows
+        - label: macOS
+        - label: Linux
+  - type: input
+    id: daw_details
+    attributes:
+      label: Host / DAW Details (Optional)
+      description: Specify your DAW, version, and plugin format if running as a plugin (e.g., Cubase 13 VST3, Ableton Live 12, FL Studio 21, Reaper 7, Logic Pro 11).
+      placeholder: e.g., Cubase 13.0.40 / VST3
