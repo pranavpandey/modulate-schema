@@ -1,0 +1,114 @@
+# ==========================================
+# Build Artifacts & CMake Directories
+# ==========================================
+/build/
+/build_release/
+/dist/
+/bin/
+/out/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# JUCE Generated Artifacts
+*_artefacts/
+/JuceLibraryCode/
+
+# ==========================================
+# GPG Keys & Security Secrets
+# ==========================================
+*.asc
+*.key
+*.lic
+*.pem
+gpg_private_key.asc
+
+# ==========================================
+# IDE & Local Tooling Settings
+# ==========================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio / MSVC artifacts
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+.vs/
+x64/
+x86/
+Debug/
+Release/
+*.dir/
+
+# CLion / JetBrains
+.idea/
+
+# Xcode / macOS system files
+*.xcodeproj/
+*.xcworkspace/
+.DS_Store
+
+# Inno Setup Outputs
+Output/
+
+# ==========================================
+# Binary & Compiled Output Files
+# ==========================================
+*.exe
+*.dll
+*.so
+*.dylib
+*.vst3
+*.component
+*.app
+*.lib
+*.a
+*.obj
+*.o
+*.tar.gz
+*.dmg
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# ==========================================
+# Dependency Cache (FetchContent)
+# ==========================================
+/_deps/
+
+# ==========================================
+# Firebase, Cloud Functions & Node.js
+# ==========================================
+# Firebase Debug Logs
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+pubsub-debug.log*
+
+# Node / Cloud Functions Build & Dependencies
+functions/node_modules/
+functions/lib/
+
+# Local Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Firebase Emulator Cache
+.firebase/
+
+# AI Agent Templates
+.agents/
+skills-lock.json
