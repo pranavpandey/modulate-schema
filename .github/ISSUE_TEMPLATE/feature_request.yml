@@ -1,0 +1,53 @@
+name: Feature / Property Proposal
+description: Propose a new schema field, DSP environment variable, or enhancement.
+title: "[Proposal]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Have an idea to expand or improve the Modulate Schema? Let us know!
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Feature / Proposal Description
+      description: What property, feature, or DSP variable would you like to see added?
+      placeholder: Describe the proposed property or capability...
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use Case & Motivation
+      description: How would sound designers, audio developers, or DAW users benefit from this addition?
+      placeholder: Explain why this addition is valuable...
+    validations:
+      required: true
+  - type: checkboxes
+    id: target_context
+    attributes:
+      label: Target Execution Context
+      description: Select all target environments this feature applies to.
+      options:
+        - label: Standalone Application
+        - label: DAW / Audio Plugin Host (Cubase, Ableton, FL Studio, Logic, Reaper, etc.)
+  - type: checkboxes
+    id: target_platform
+    attributes:
+      label: Target Operating System
+      description: Select all target operating systems for this feature.
+      options:
+        - label: Windows
+        - label: macOS
+        - label: Linux
+  - type: textarea
+    id: proposed_json
+    attributes:
+      label: Proposed JSON Structure (Optional)
+      description: Example JSON snippet demonstrating how the property could look.
+      render: json
+      placeholder: |
+        {
+          "dsp": {
+            "new_property": "value"
+          }
+        }
